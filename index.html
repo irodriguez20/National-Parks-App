@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Parks API App</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Find A National Park</h1>
+
+        <form id="js-form">
+            <label for="search-term">Search:</label>
+            <input type="text" name="search" id="search-term">
+            <br>
+
+            <label for="results-num">Max results to return:</label>
+            <input type="text" name="results-num" id="max-results" value="10">
+            <br>
+
+            <button type="submit" class="search">Search</button>
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+            <h2>Search Results</h2>
+            <ul id="results-list">
+
+            </ul>
+        </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
