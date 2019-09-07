@@ -19,8 +19,8 @@ function displayResults(responseJson){
 
 function getNationalParks(searchTerm, maxResults=10){
     const params ={
+        stateCode: searchTerm,
         limit: maxResults,
-        q: searchTerm,
         api_key: apiKey,
     };
 
